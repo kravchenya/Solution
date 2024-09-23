@@ -11,6 +11,15 @@ There were 2 main architecture decisions taken
   - this step allows to make open architecture for future extensions as f.e. CMapper can be added without causing braking changes. And as we have Parser, which prepares mapping from strings to Types, custom Mapper (like AMapper, BMapper) can focus on mapping itself (Single Responsibility Principle)
 
 
+
+
+### Initiations of different Mapping handlers is done with Factory pattern
+![](images/factorypattern1.png)
+
+
+### The same applies to Parser class, however here a simplified code structure was used
+![](images/factorypattern2.png)
+
 ### Project execution
 There are 2 ways to execute the code
 - f.e. in Visual Studio Code itself (command like `dotnet restore`)
